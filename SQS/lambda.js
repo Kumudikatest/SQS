@@ -8,8 +8,8 @@ exports.handler = function (event, context, callback) {
 		MaxNumberOfMessages: '1',
 		VisibilityTimeout: '30',
 		WaitTimeSeconds: '0'
-	}, function (receiveMessages) {
-		receivedMessages.forEach(message => {
+	}, function (receiveMessage) {
+		receiveMessage.forEach(message => {
 			// your logic to access each message through out the loop. Each message is available under variable message 
 			// within this block
 			console.log("message");
